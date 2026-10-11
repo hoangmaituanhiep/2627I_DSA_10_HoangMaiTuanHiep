@@ -32,13 +32,13 @@ public class b2 {
         }
         students.sort((a, b) -> {
             if (Double.compare(b.gpa, a.gpa) != 0) {
-                return Double.compare(b.gpa, a.gpa); // Descending GPA
+                return Double.compare(b.gpa, a.gpa);
             }
             int nameCompare = a.name.compareToIgnoreCase(b.name);
             if (nameCompare != 0) {
-                return nameCompare; // Ascending Name
+                return nameCompare;
             }
-            return Integer.compare(a.id, b.id); // Ascending ID
+            return Integer.compare(a.id, b.id);
         });
 
         for (Student s : students) {
